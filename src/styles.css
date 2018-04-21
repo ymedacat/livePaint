@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body{
+	margin: 0;
+	font-family: 'century gothic';
+}
+
+.body{
+	padding: 60px 16px;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+
+}
+
+footer{
+		position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+
+img {
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    width: 100%;
+}
+
+.indexgrid{
+	padding: 0 32px;
+}
+
+.header-icon {
+  padding: 0 ;
+  color: #333;
+}
+
+.footer-icon {
+  padding: 0 ;
+  margin-top: 8px;
+  color: #a0a0a0;
+  width: 28px !important;
+  height: 28px !important;
+  font-size: 28px !important;
+}
+
+
+
+.header-spacer {
+  flex: 1 1 auto;
+}
+
+.footer-spacer {
+  flex: 1 1 auto;
+}
