@@ -1,0 +1,33 @@
+
+<div class="hero-image">
+<img src="assets/img/chokwan.jpg">
+</div>
+<br/>
+  <mat-grid-list class="indexgrid" cols="3"  gutterSize="8px" rowHeight="4:1">
+  <mat-grid-tile><h1>16</h1></mat-grid-tile>
+  <mat-grid-tile><h1>120</h1></mat-grid-tile>
+  <mat-grid-tile><h1>225</h1></mat-grid-tile>
+  <mat-grid-tile>posts</mat-grid-tile>
+  <mat-grid-tile>follower</mat-grid-tile>
+  <mat-grid-tile>following</mat-grid-tile>
+</mat-grid-list>
+<mat-list>
+	<h3 mat-subheader>Bio</h3>
+  <mat-list-item>KEEP CALM AND PAINT YOURSELF</mat-list-item>
+  <mat-divider></mat-divider>
+  <h3 mat-subheader>Tags</h3>
+  <mat-list-item>CG,comic,pop art, cat lover</mat-list-item>
+  <mat-divider></mat-divider>
+ <h3 mat-subheader>Paints</h3>
+  <mat-grid-list class="indexgrid" cols="3"  gutterSize="8px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+    <img [src]="tile.img" *ngIf=tile.img />
+  </mat-grid-tile>
+</mat-grid-list>
+
+</mat-list>

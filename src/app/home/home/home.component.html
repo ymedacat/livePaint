@@ -1,0 +1,20 @@
+<mat-toolbar>
+
+<mat-toolbar-row style="background-color: #fff;padding: 0;">
+<p style="font-size: 16px;font-weight:normal;">500+ paints processing</p>
+<span class="header-spacer"></span>
+<mat-icon class="header-icon">view_module</mat-icon>
+</mat-toolbar-row>
+
+</mat-toolbar>
+
+<mat-grid-list class="indexgrid" cols="3"  gutterSize="8px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+    <img [src]="tile.img" *ngIf=tile.img />
+  </mat-grid-tile>
+</mat-grid-list>

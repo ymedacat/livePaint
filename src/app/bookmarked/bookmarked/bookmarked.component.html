@@ -1,0 +1,28 @@
+<h2>Bookmarked</h2>
+
+<mat-tab-group>
+  <mat-tab label="All">
+    <mat-grid-list class="indexgrid" cols="3"  gutterSize="8px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+    <img [src]="tile.img" *ngIf=tile.img />
+  </mat-grid-tile>
+</mat-grid-list>
+</mat-tab>
+  <mat-tab label="Following">
+      <mat-grid-list class="indexgrid" cols="3"  gutterSize="8px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+    <img [src]="tile.img" *ngIf=tile.img />
+  </mat-grid-tile>
+</mat-grid-list>
+</mat-tab>
+</mat-tab-group>
