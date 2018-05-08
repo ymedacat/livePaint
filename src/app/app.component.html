@@ -15,11 +15,9 @@
 </header>
 
 <div class="body">
+  <br/>
 
-
-
-      
-
+<router-outlet></router-outlet>
 
 </div>
 
@@ -28,15 +26,15 @@
 <mat-toolbar style="background-color: #fff;box-shadow: 0px -3px 3px 0px rgba(0,0,0,0.16);">
 
   <mat-toolbar-row>
-    <a routerLink="#"><mat-icon class="footer-icon" style="color: #333;">image</mat-icon></a>
+    <a routerLink="home"><mat-icon class="footer-icon" style="color: #333;">image</mat-icon></a>
     <span class="footer-spacer"></span>
-    <a routerLink="/friendship"><mat-icon class="footer-icon">supervisor_account</mat-icon></a>
+    <a routerLink="meetfriend"><mat-icon class="footer-icon">supervisor_account</mat-icon></a>
     <span class="footer-spacer"></span>
-    <a routerLink="#"><mat-icon class="footer-icon">brush</mat-icon></a>
+    <a routerLink="paintnow"><mat-icon class="footer-icon">brush</mat-icon></a>
     <span class="footer-spacer"></span>
-    <a routerLink="#"><mat-icon class="footer-icon">bookmark</mat-icon></a>
+    <a routerLink="bookmarked"><mat-icon class="footer-icon">bookmark</mat-icon></a>
     <span class="footer-spacer"></span>
-    <a routerLink="#"><mat-icon class="footer-icon">settings</mat-icon></a>
+    <a routerLink="settings"><mat-icon class="footer-icon">settings</mat-icon></a>
   </mat-toolbar-row>
 </mat-toolbar>
 
