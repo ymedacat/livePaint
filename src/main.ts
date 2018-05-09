@@ -11,15 +11,16 @@ if (environment.production) {
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
-  var importedtwojs = document.createElement('script');
-  importedtwojs.type = 'text/javascript';
-  importedtwojs.src = 'assets/js/two.js';
-  document.body.appendChild(importedtwojs);
+  var importunderscore = document.createElement('script');
+  importunderscore.type = 'text/javascript';
+  importunderscore.src = 'assets/js/underscore.js';
+  document.body.appendChild(importunderscore);
 
   var importurl = document.createElement('script');
   importurl.type = 'text/javascript';
   importurl.src = 'assets/js/url.js';
   document.body.appendChild(importurl);
+
 
   var importcurve = document.createElement('script');
   importcurve.type = 'text/javascript';
