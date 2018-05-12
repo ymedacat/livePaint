@@ -8,7 +8,8 @@ import { AngluarmaterialModule } from '../angluarmaterial.module';
 @NgModule({
   imports: [
     CommonModule,
-    HomeRoutingModule,AngluarmaterialModule
+    HomeRoutingModule,
+    AngluarmaterialModule
   ],
   declarations: [
     HomeComponent

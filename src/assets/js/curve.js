@@ -3,7 +3,7 @@
           addBackdrop(50);
 
           var $window = $(window);
-          var radius = 40, editColor = 'rgb(79, 128, 255)';
+          var radius = 40, editColor = 'rgb(10, 21, 33)';
           var type = /(canvas|webgl)/.test(url.type) ? url.type : 'svg';
           var two = new Two({
               type: Two.Types[type],
