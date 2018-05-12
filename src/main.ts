@@ -11,7 +11,7 @@ if (environment.production) {
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
-  var importunderscore = document.createElement('script');
+ var importunderscore = document.createElement('script');
   importunderscore.type = 'text/javascript';
   importunderscore.src = 'assets/js/underscore.js';
   document.body.appendChild(importunderscore);

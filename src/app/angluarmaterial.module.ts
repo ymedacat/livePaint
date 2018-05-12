@@ -13,6 +13,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatProgressSpinnerModule,
     MatDividerModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports: [
     CommonModule,
@@ -46,7 +50,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatProgressSpinnerModule,
     MatDividerModule,
     MatListModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class AngluarmaterialModule { }
