@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: LoginComponent }
+
+  { path: 'home', loadChildren: 'app/home/home.module#HomeModule' },
+  { path: '', component: LoginComponent}
+
 ];
 
 @NgModule({

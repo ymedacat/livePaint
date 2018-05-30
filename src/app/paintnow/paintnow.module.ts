@@ -5,11 +5,13 @@ import { PaintnowRoutingModule } from './paintnow-routing.module';
 import { AngluarmaterialModule } from '../angluarmaterial.module';
 
 
+
 @NgModule({
   imports: [
     CommonModule,
     PaintnowRoutingModule,
-    AngluarmaterialModule
+    AngluarmaterialModule,
+
   ],
   declarations: [
   	PaintnowComponent

@@ -1,13 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+
 body{
-	margin: 0;
-	font-family: 'century gothic';
+  margin: 0;
+  font-family: 'century gothic';
+
 }
 
 .body{
-	padding: 60px 16px;
+	/*padding: 60px 16px;*/
+  padding-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  overflow: auto;
+  height:100%;
 }
 
 header{
@@ -62,4 +69,21 @@ footer{
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
+}
+
+
+.login input.mat-input-element{
+color: #fff !important;
+}
+
+.login .mat-focused .mat-form-field-label {
+color: #fff !important;
+}
+
+.login .mat-form-field-ripple {
+background-color: #fff !important;
+}
+
+.login .mat-input-underline {
+    background-color: #fff !important; 
 }

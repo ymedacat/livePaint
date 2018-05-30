@@ -11,7 +11,7 @@ if (environment.production) {
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
 
-  var importunderscore = document.createElement('script');
+ var importunderscore = document.createElement('script');
   importunderscore.type = 'text/javascript';
   importunderscore.src = 'assets/js/underscore.js';
   document.body.appendChild(importunderscore);
@@ -21,8 +21,8 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   importurl.src = 'assets/js/url.js';
   document.body.appendChild(importurl);
 
+    var importpaint = document.createElement('script');
+  importpaint.type = 'text/javascript';
+  importpaint.src = 'assets/js/paint.js';
+  document.body.appendChild(importpaint);
 
-  var importcurve = document.createElement('script');
-  importcurve.type = 'text/javascript';
-  importcurve.src = 'assets/js/curve.js';
-  document.body.appendChild(importcurve);

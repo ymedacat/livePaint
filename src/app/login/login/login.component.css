@@ -1,0 +1,36 @@
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 100% 0; }
+}
+.title{
+    width:100%;
+}
+.body {
+    background: url('/assets/img/loginbg.jpg') center center fixed !important;
+  /*(-webkit-background-size: cover!important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;*/
+    color: #000;
+    background-repeat: repeat;
+    animation: animatedBackground 100s linear infinite;
+    -ms-animation: animatedBackground 100s linear infinite;
+    -moz-animation: animatedBackground 100s linear infinite;
+    -webkit-animation: animatedBackground 100s linear infinite;
+    height: 100%;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+
+.example-full-width {
+    width: 100%;
+}
+h1, h2 {
+    text-align: center;
+}

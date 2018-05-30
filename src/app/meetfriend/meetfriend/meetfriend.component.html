@@ -1,3 +1,19 @@
+<header>
+<mat-toolbar style="background-color: #fff;box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.16);">
+
+  <mat-toolbar-row>
+    <mat-icon class="header-icon">notifications_none</mat-icon>
+    <span class="header-spacer"></span>
+    <span>LivePaint</span>
+    <span class="header-spacer"></span>
+    <mat-icon class="header-icon">search</mat-icon>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+</header>
+
+<div class="body">
+
 <h2>Meet friends</h2>
 
 <mat-card class="example-card">
@@ -6,7 +22,7 @@
     <mat-card-title>Shiba Inu</mat-card-title>
     <mat-card-subtitle>Dog Breed</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <img mat-card-image src="assets/img/woman.jpeg" alt="Photo of a Shiba Inu">
   <mat-card-content>
     <p>
       The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
@@ -99,3 +115,24 @@
     <button mat-button>Meet Up!</button>
   </mat-card-actions>
 </mat-card>
+
+  </div>
+
+<footer>
+
+<mat-toolbar style="background-color: #fff;box-shadow: 0px -3px 3px 0px rgba(0,0,0,0.16);">
+
+  <mat-toolbar-row>
+    <a routerLink="home"><mat-icon class="footer-icon" style="color: #333;">image</mat-icon></a>
+    <span class="footer-spacer"></span>
+    <a routerLink="meetfriend"><mat-icon class="footer-icon">supervisor_account</mat-icon></a>
+    <span class="footer-spacer"></span>
+    <a routerLink="paintnow"><mat-icon class="footer-icon">brush</mat-icon></a>
+    <span class="footer-spacer"></span>
+    <a routerLink="bookmarked"><mat-icon class="footer-icon">bookmark</mat-icon></a>
+    <span class="footer-spacer"></span>
+    <a routerLink="settings"><mat-icon class="footer-icon">settings</mat-icon></a>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+</footer>

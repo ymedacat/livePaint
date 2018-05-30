@@ -1,26 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
-import * as _ from 'underscore';
-import * as Two from 'two.js';
 
-@Component({
-  selector: 'app-paintnow',
-  templateUrl: './paintnow.component.html',
-  styleUrls: ['./paintnow.component.css']
-})
-export class PaintnowComponent implements OnInit {
+  	var colorpicker = '#000';
+  	$('.input-color-value').on('change', function(){
+    	colorpicker = $(this).val();
+	});
 
-
-  constructor() { }
-
-  ngOnInit() {
-
-    var colorpicker = '#000';
-    $('.input-color-value').on('change', function(){
-      colorpicker = $(this).val();
-  });
-
-            $(function() {
+  	        $(function() {
 
           createGrid();
 
@@ -143,7 +127,3 @@ export class PaintnowComponent implements OnInit {
           }
 
         });
-  }
-
-}
-
